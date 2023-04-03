@@ -1,0 +1,140 @@
+/*start variables*/
+:root {
+    --main-color: rgb(171, 161, 161);
+}
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: ease-in all 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #AA895F;
+    background-image: linear-gradient(to right, #708F96 , #AA895F);
+    color: white;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*end global rules*/
+/*start main_page*/
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px; 
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .text {
+        text-align: center;
+    }
+}
+.text h1 {
+    line-height: 1.4;
+}
+@media (max-width: 767px) {
+    .text h1 {
+        font-size: 25px;
+    }
+}
+.text h1:hover {
+    color: var(--main-color);
+}
+.text p {
+    line-height: 1.4;
+    letter-spacing: 1.3px;
+}
+.text p:hover {
+    color: var(--main-color);
+}
+.text img {
+    width: 50%;
+    border-radius: 50%;
+}
+.text img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 767px) {
+    .text img:hover {
+        transform: scale(1.2); 
+    }
+}
+.intro .dir {
+    text-align: center;
+    padding-top: 60px;
+}
+.intro a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .intro a {
+        font-size: 20px;
+    }
+}
+.intro a:hover {
+    color: var(--main-color);
+}
+.footer {
+    text-align: center;
+    padding-top: 30px;
+}
+@media (max-width: 767px) {
+    .footer {
+        margin-top:50%;
+    }
+}
+/*end main_page*/
+/*end sec page*/
+.about .text h1 {
+    border-bottom: 1px solid white;
+}
+/*end sec page*/
+.deriction {
+    margin-top: 40px;
+}
+.back  {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+}
+@media (max-width: 767px) {
+    .back {
+        font-size: 20px;
+    }
+}
+.back:hover {
+    color: var(--main-color);
+}
